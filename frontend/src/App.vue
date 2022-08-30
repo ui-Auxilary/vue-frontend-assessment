@@ -1,6 +1,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import WebsiteHeader from './components/Header.vue'
+import WebsiteFooter from './components/Footer.vue'
+import WebsiteLogin from './components/Login.vue'
 
 /**
  * App component. You are welcome to modify this file.
@@ -8,6 +10,8 @@ import WebsiteHeader from './components/Header.vue'
 export default defineComponent({
   components: {
     WebsiteHeader,
+    WebsiteFooter,
+    WebsiteLogin
   },
   data() {
     return {};
@@ -19,27 +23,34 @@ export default defineComponent({
   <main>
     <WebsiteHeader />
     <div class='home-body'>
-      <h2>
-        Welcome brave soul... to the world of Vue.js
-      </h2>
-      <p>
-        In this challenge, you will need to implement a simple login page. I have full
-        confidence that you'll be able to succeed in this task and look forward to seeing your submission.
-      </p>
-      <h3>
-        Link to challenge:
-        <a
-          href='https://github.com/Darianlmj/projects-frontend-assessment'
-          target='_blank'
+      <div class='body-left'>
+        <img 
+          class='splash-art' 
+          src='./assets/pogart.svg'
         >
-          projects-frontend-assessment
-        </a>
-      </h3>
+      </div>
+      <div class='body-right'>
+        <WebsiteLogin />
+      </div>
     </div>
+    <WebsiteFooter />
   </main>
 </template>
 
-<style scoped>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@500&display=swap');
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #app {
+    background-image: url('./assets/topography.svg');
+    font-family: "Poppins", sans-serif;
+  }
+
   main {
     padding: 0rem 3rem;
   }
@@ -49,9 +60,23 @@ export default defineComponent({
   }
 
   .home-body {
-    height: calc(50vh);
-    padding: 2rem;
+    display: flex;
+    /* height: calc(80vh); */
     border-radius: 0.5rem;
     background-color: #f5f5f5;
+  }
+
+  .body-left {
+    padding: 2.5rem;
+    background-color: #593067;
+    width: 40vw;
+  }
+
+  .body-right {
+    width: 50vw;
+  }
+
+  .splash-art {
+    width: 80%;
   }
 </style>
