@@ -11,7 +11,7 @@ export default defineComponent({
   components: {
     WebsiteHeader,
     WebsiteFooter,
-    WebsiteLogin
+    WebsiteLogin,
   },
   data() {
     return {};
@@ -39,7 +39,7 @@ export default defineComponent({
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@500&display=swap');
-  
+
   * {
     margin: 0;
     padding: 0;
@@ -57,6 +57,11 @@ export default defineComponent({
 
   p {
     font-size: 1.2rem;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
   }
 
   .home-body {

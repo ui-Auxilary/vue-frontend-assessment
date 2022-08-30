@@ -9,14 +9,18 @@ export default {
     <div class='footer-left'>
       <img src='../assets/pog.svg'>
     </div>
-    <div class='author'>Made with 💕 by Christian</div>
+    <div class='author'>
+      Made with 💕 by Christian
+    </div>
     <div class='footer-right'>
-      WHAT
+      <a href='https://github.com/ui-Auxilary'>
+        <i class='giticon fab fa-github' />
+      </a>
     </div>
   </footer>
 </template>
 
-<style>
+<style scoped>
   .footer {
     display: flex;
     bottom: 0px;
@@ -33,5 +37,21 @@ export default {
 
   .author {
     color: white;
+  }
+
+  .giticon {
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .giticon:hover {
+    transform: scale(1.3);
+    color: white;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: #11243f;
   }
 </style>

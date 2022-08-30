@@ -2,10 +2,10 @@
   <div class='login-container'>
     <div class='login-text'>
       <h3>Welcome to Pogject!</h3>
-      <span>Register an account</span>
+      <span>Login to an existing account</span>
     </div>
     <WebsiteForm />
-    <h4>Forgot your password?</h4> 
+    <h4 class='forgot-password'>Forgot your password?</h4> 
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   name: 'WebsiteLogin',
   components: {
     WebsiteForm,
-  }
+  },
 }
 </script>
 
@@ -50,8 +50,14 @@ export default {
     color: #CDB6B6;
   }
 
-  h4 {
+  .forgot-password {
     text-decoration: underline;
     font-size: 12px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+  }
+
+  .forgot-password:hover {
+    color: rgb(65, 65, 209);
   }
 </style>
