@@ -6,8 +6,10 @@
     >
       <div class='modal-container'>
         <div class='modal-header'>
-          <div class='modal-status'>
-            Status: {{ status }}
+          <div 
+            class='modal-status'
+          >
+            <p>Status: {{ status }}</p>
           </div>
           <div 
             class='modal-close' 

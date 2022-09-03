@@ -12,6 +12,7 @@
         <i class='fa-solid fa-user' />
         <input 
           v-model='username'
+          class='input_username'
           type='text' 
           placeholder='Username'
         >
@@ -23,6 +24,7 @@
         <i class='fa-solid fa-lock' />
         <input 
           v-model='password'
+          class='input_password'
           type='password' 
           placeholder='password'
         >
@@ -60,7 +62,6 @@ export default {
         this.$refs.popup.show = true;
         this.$refs.popup.status = response.data.status;
         this.$refs.popup.message = response.data.message;
-        console.log(response.data)
       }).catch((err) => {
         this.$refs.popup.show = true;
         this.$refs.popup.status = 401;

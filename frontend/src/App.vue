@@ -66,7 +66,6 @@ export default defineComponent({
 
   .home-body {
     display: flex;
-    /* height: calc(80vh); */
     border-radius: 0.5rem;
     background-color: #f5f5f5;
   }

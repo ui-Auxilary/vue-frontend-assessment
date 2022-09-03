@@ -5,7 +5,9 @@
       <span>Login to an existing account</span>
     </div>
     <WebsiteForm />
-    <h4 class='forgot-password'>Forgot your password?</h4> 
+    <h4 class='forgot-password'>
+      Forgot your password?
+    </h4> 
   </div>
 </template>
 
